@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>行政部活動調查系統 v6.57｜11項重做修正版</title>
+<title>行政部活動調查系統 v6.50｜多元餐廳計價版</title>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<link rel="stylesheet" href="./assets/style-bf5f47b9.css">
+<link rel="stylesheet" href="./assets/style-dd4f3a83.css">
 </head>
 <body>
 <div id="front" class="wrap">
   <div id="adminPreviewBar" class="adminPreviewBar"><div><strong>管理員預覽模式</strong><small id="previewAdminUser"></small></div><div class="btns"><button class="btn primary" onclick="returnToAdmin()">返回管理後台</button><button class="btn" onclick="logout()">登出</button></div></div>
   <div class="top">
-      <div class="brand"><div id="secretLogo" class="logo" onclick="secretAdminTap()" aria-label="公司Logo"><img src="assets/company-logo.png" alt="公司Logo"></div><div><h1>活動調查系統</h1><p>Enterprise Survey v6.57</p></div></div>
+    <div class="brand"><div id="secretLogo" class="logo" onclick="secretAdminTap()" aria-label="公司Logo"><img src="assets/company-logo.png" alt="公司Logo"></div><div><h1>活動調查系統</h1><p>Enterprise Survey v6.5</p></div></div>
     <div id="frontStatus" class="pill">載入中</div>
   </div>
   <div id="setup" class="setup">尚未填入 Firebase 設定。請在 HTML 裡找到 <b>firebaseConfig</b>，填入你的 Firebase Web App 設定。</div>
@@ -54,5 +54,5 @@
 <section id="accessP" class="panel"><div class="card"><h3>活動權限管理</h3><p class="muted">針對目前選取的活動指派負責人。管理者可編輯；檢視者僅能查看結果與匯出。</p><div class="accessForm"><div><label for="managerEmail">Google 帳號</label><input id="managerEmail" type="email" list="memberGoogleOptions" placeholder="可輸入或選擇 Google 帳號"><datalist id="memberGoogleOptions"></datalist><small class="muted">建議先在人員主檔維護 Google 帳號。</small></div><div><label for="managerRole">權限</label><select id="managerRole"><option value="manager">活動管理者</option><option value="viewer">結果檢視者</option></select></div><button class="btn primary" onclick="saveSurveyManager()">新增／更新權限</button></div><div id="managerTable"></div></div></section>
 </main></div></div>
 <script src="./assets/firebase-config-76e06a7e.js"></script>
-<script src="./assets/app-3a0e8009.js"></script>
+<script src="./assets/app-e0a4338c.js"></script>
 </body></html>
